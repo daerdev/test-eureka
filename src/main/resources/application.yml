@@ -1,0 +1,21 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8080/eureka
+    fetch-registry: false
+    register-with-eureka: false
+  instance:
+    instance-id: eureka-id
+    hostname: www.hostname.cn
+spring:
+  application:
+    name: eureka-application
+info:
+  name: client
+  description: ${project.description}
+  version: ${project.version}
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: '*'
